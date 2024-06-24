@@ -1,0 +1,336 @@
+{
+	"info": {
+		"_postman_id": "c5b7dfda-7ebc-4cf6-b679-42a6500ed937",
+		"name": "zBetter DataBase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26368740"
+	},
+	"item": [
+		{
+			"name": "Login users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Ramon",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "copium123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "decrypt",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjU5LCJpYXQiOjE3MDI1ODcwMzAsImV4cCI6MTcwMjU5MDYzMH0.Iv6WiMwiIf9zRrseaNkZaMKWmTK0wNq8s94ztLJe4Y8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Ramon",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "copium123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/dycrypt/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dycrypt",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "dfsaafdsdfs",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register Teacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Ramon",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "copium123",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Ramon",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Ramon",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ramon@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "DOB",
+							"value": "2005-04-14",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Kerkweg 36",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "student",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/register/teacher",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register",
+						"teacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Ramon",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "copium123",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Ramon",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Ramon",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ramon@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "DOB",
+							"value": "2005-04-14",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Kerkweg 36",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "student",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/register/teacher",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register",
+						"teacher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student get grades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/student/getgrades",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"student",
+						"getgrades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "teacher get class",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2Vycm9sZV9pZCI6MzQsImV4dHJhIjp7InVzZXJfaWQiOjkzLCJyb2xlX2lkIjoyfSwiaWF0IjoxNzAyNjYyMTc0LCJleHAiOjE3MDI2NjU3NzR9.SQJMd7upAayldykoNqjZxOlI3j6brwPmwq0mt4wNnfg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/teacher/class/sd3B",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"teacher",
+						"class",
+						"sd3B"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "teacher post grade",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2Vycm9sZV9pZCI6MzQsImV4dHJhIjp7InVzZXJfaWQiOjkzLCJyb2xlX2lkIjoyfSwiaWF0IjoxNzAyNjY1OTMyLCJleHAiOjE3MDI2Njk1MzJ9.gGaQBy0plReKbQkCT-e4verTSC-CUj5x8y4bQG8fGGo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/teacher/grade",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"teacher",
+						"grade"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
